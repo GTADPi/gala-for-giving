@@ -1,11 +1,70 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gala for Giving</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f8;
+      color: #333;
+      padding: 2rem;
+      text-align: center;
+    }
+    header {
+      background-color: #2e4a62;
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .auction {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input, button {
+      padding: 0.5rem;
+      margin-top: 1rem;
+      width: 80%;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #2e4a62;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the Gala for Giving</h1>
-  <p>This is a sample homepage for your silent auction site!</p>
+  <header>
+    <h1>Gala for Giving</h1>
+    <p>September 19, 2025 • The Carlyle Venue • Atlanta</p>
+  </header>
+
+  <div class="auction">
+    <h2>Sample Auction Item</h2>
+    <p><strong>Weekend Beach Getaway</strong><br>Enjoy a two-night stay on the Gulf Coast.</p>
+    <form onsubmit="event.preventDefault(); alert('Bid submitted!');">
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <input type="number" placeholder="Your Bid Amount ($)" required><br>
+      <button type="submit">Place Bid</button>
+    </form>
+  </div>
 </body>
 </html>
